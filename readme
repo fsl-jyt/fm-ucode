@@ -3,23 +3,27 @@ products. Specific platforms require specific binaries, and those also have to
 further match specific software versions (Frame Manager Driver -- FMD).
 The mapping is given below:
 
+SDK1.3 released microcode images:
+
 P1023 rev 1.1
-fsl_fman_ucode_P1023_160_15.bin  	FMD15, FMD15.1, FMD16, FMD17.x, FMD18.1.1
+fsl_fman_ucode_P1023_160_15.bin  	FMD15, FMD15.1, FMD16, FMD17.x
 
 P204x
-fsl_fman_ucode_P2041_106_1_6.bin (*)	FMD18.1.2
+fsl_fman_ucode_P2041_106_1_4.bin (*)    FMD17.x
 
 P304x
-fsl_fman_ucode_P3041_106_1_6.bin (*)	FMD18.1.2
+fsl_fman_ucode_P3041_106_1_4.bin (*)    FMD17.x
 
 P4080
-fsl_fman_ucode_P4080_106_2_6.bin (*)	FMD18.1.2
+fsl_fman_ucode_P4080_106_2_4.bin (*)    FMD17.x
 
 P5020
-fsl_fman_ucode_P5020_106_1_6.bin (*)	FMD18.1.2
+fsl_fman_ucode_P5020_106_1_4.bin (*)    FMD17.x
 
 P5040
-fsl_fman_ucode_P5040_106_1_6.bin (*)	FMD18.1.2
+fsl_fman_ucode_P5040_106_1_4.bin (*)    FMD17.x
+
+SDK1.3.1(**) released microcode images:
 
 B4860
 fsl_fman_ucode_B4860_106_3_6.bin (*)	FMD18.1.2
@@ -33,3 +37,6 @@ NOTES:
 	(*)	This newer ucode release was never tested against older FMDs.
 		If using older versions of either ucode or FMD, please make sure
 		to use the corresponding version of their counterpart.
+	(**)	The SDK1.3.1 release includes the SDK1.3 release for P1/P2/P3/P4/P5
+		platforms (based on FMD17.x) and introduces B4860/T4240 support
+		using FMD18.1.2 and 106_x_6 microcode.
